@@ -1,0 +1,33 @@
+Java coding standards
+Coding Standard for Classes - It is recommended to define ClassName as noun starting with uppercase letter. If it contains multiple word then each inner word should start with uppercase letter. Example - StringBuffer, ArrayList 
+Coding Standard for Interface - Interface name should be adjective starting with uppercase letter. If it contains multiple word then each inner word should start with uppercase letter. Example - Runnable, Comparable 
+Coding Standard for Methods - Method name should be verb or verb noun combination starting with lowercase letter. Method name should follow camelCase letters. Example - run(), compare(), setSalary() 
+Coding Standard for variable - Usually variable name should be noun starting with lowercase letter & it should follow camel case naming convention. Example - firstName, age, salary, lastName. 
+Coding Standard for Constants - Constant names should use CONSTANT_CASE. Constant should be declared with static final modifiers. 
+Coding standard for Variable Declaration - Every variable declaration declared only one variable. Multiple variable declaraion in single staement should not be used. Though multiple variable declaration is acceptable in the header of a for loop. 
+Coding Standard for Import Statements -  
+1.	Wildcard imports should be avoided. 
+2.	Import statements should not be line wrapped, any column limit should not apply to aimport statements. 
+3.	Import staements should be ordered, static & non-static imports should be grouped 
+Coding Standard for Braces -  
+4.	Braces should be used where optional. Braces should be used with if/else block even if the body is empty or contains single statement. 
+5.	Braces should follow K&R style for non-empty blocks. 
+Always use @Override - A method should be marked with @Override annotation whenever it is legal. 
+Never Ignore Caught Exception - should Caught exception never be ignored. Either we need to do some remediation step in the catch block or atleast we need to log it with proper stacktrace. 
+
+Logging standards
+Coding Standard for Classes - It is recommended to define ClassName as noun starting with uppercase letter. If it contains multiple word then each inner word should start with uppercase letter. Example - StringBuffer, ArrayList 
+Coding Standard for Interface - Interface name should be adjective starting with uppercase letter. If it contains multiple word then each inner word should start with uppercase letter. Example - Runnable, Comparable 
+Coding Standard for Methods - Method name should be verb or verb noun combination starting with lowercase letter. Method name should follow camelCase letters. Example - run(), compare(), setSalary() 
+Coding Standard for variable - Usually variable name should be noun starting with lowercase letter & it should follow camel case naming convention. Example - firstName, age, salary, lastName. 
+Coding Standard for Constants - Constant names should use CONSTANT_CASE. Constant should be declared with static final modifiers. 
+Coding standard for Variable Declaration - Every variable declaration declared only one variable. Multiple variable declaraion in single staement should not be used. Though multiple variable declaration is acceptable in the header of a for loop. 
+Coding Standard for Import Statements -  
+1.	Wildcard imports should be avoided. 
+2.	Import statements should not be line wrapped, any column limit should not apply to aimport statements. 
+3.	Import staements should be ordered, static & non-static imports should be grouped 
+Coding Standard for Braces -  
+4.	Braces should be used where optional. Braces should be used with if/else block even if the body is empty or contains single statement. 
+5.	Braces should follow K&R style for non-empty blocks. 
+Always use @Override - A method should be marked with @Override annotation whenever it is legal. 
+Never Ignore Caught Exception - should Caught exception never be ignored. Either we need to do some remediation step in the catch block or atleast we need to log it with proper stacktrace. 
