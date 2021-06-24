@@ -1,0 +1,117 @@
+The OWASP Top 10 is a standard awareness document for developers and web application security.It represents a broad consensus about the most critical security risks to web applications. 
+ 
+Developers are expected to follow the OWASP Top 10 - 2017 version to develop secure code without known vulnerabilities. 
+They are expected to strictly follow the below and validate that the code is compliant by running SonarQube analysis on their projects using Maven Sonar plugin. 
+SonarQube analysis will also be done during the automated build phase of the code using Jenkins to track the following OWASP Top 10 Vulnerabilities and Security Hotspots on the developed code. 
+ 
+1.	A1 - Injection 
+           Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query. The attacker's hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization. 
+2.	A2 - Broken Authentication 
+           Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users' identities temporarily or permanently. 
+3.	A3 - Sensitive Data Exposure 
+           Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged with the browser. 
+4.	A4 - XML External Entities (XXE) 
+           Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks. 
+5.	A5 - Broken Access Control 
+           Restrictions on what authenticated users are allowed to do are often not properly enforced. Attackers can exploit these flaws to access unauthorized functionality and/or data, such as access other users' accounts, view sensitive files, modify other users' data, change access rights, etc. 
+6.	A6 - Security Misconfiguration 
+           Security misconfiguration is the most commonly seen issue. This is commonly a result of insecure default configurations, incomplete or ad hoc configurations, open cloud storage, misconfigured HTTP headers, and verbose error messages containing sensitive information. Not only must all operating systems, frameworks, libraries, and applications be securely configured, but they must be patched and upgraded in a timely fashion. 
+7.	A7 - Cross-Site Scripting (XSS) 
+           XSS flaws occur whenever an application includes untrusted data in a new web page without proper validation or escaping, or updates an existing web page with user-supplied data using a browser API that can create HTML or JavaScript. XSS allows attackers to execute scripts in the victim's browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites. 
+8.	A8 - Insecure Deserialization 
+           Insecure deserialization often leads to remote code execution. Even if deserialization flaws do not result in remote code execution, they can be used to perform attacks, including replay attacks, injection attacks, and privilege escalation attacks. 
+9.	A9 - Using Components with Known Vulnerabilities 
+           Components, such as libraries, frameworks, and other software modules, run with the same privileges as the application. If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover. Applications and APIs using components with known vulnerabilities may undermine application defenses and enable various attacks and impacts. 
+10.	A10 - Insufficient Logging & Monitoring 
+            Insufficient logging and monitoring, coupled with missing or ineffective integration with incident response, allows attackers to further attack systems, maintain persistence, pivot to more systems, and tamper, extract, or destroy data. Most breach studies show time to detect a breach is over 200 days, typically detected by external parties rather than internal processes or monitoring. 
+ 
+SAN Top 25 Vulnerability Prevention Coding Guidelines 
+ 
+The Common Weakness Enumeration (CWE) is a list of software security vulnerabilities found all throughout the software development industry. It’s a community-driven project maintained by MITRE, a non-profit research and development group. For each entry, the CWE provides a description of the vulnerability and steps for mitigating it. 
+ 
+Developers are expected to follow the SAN Top 25 to develop secure code without known vulnerabilities. 
+They are expected to strictly follow the below and validate that the code is compliant by running SonarQube analysis on their projects using Maven Sonar plugin. 
+SonarQube analysis will also be done during the automated build phase of the code using Jenkins to track the following Vulnerabilities and Security Hotspots on the developed code. 
+ 
+1.	CWE-78: Improper Neutralization of Special Elements Used in an OS Command (‘OS Command Injection’)
+Applications are vulnerable to command injection if they use any form of outside input when running a command on the host system. Malicious input could cause the command to run in unexpected ways, potentially compromising the entire OS. 
+ 
+2.	CWE-89: SQL Injection
+SQL injection occurs when an application uses outside input as part of a SQL query. An attacker can use this to run any number of SQL commands on the database, resulting in data retrieval or manipulation. 
+ 
+3.	CWE-94: Code Injection
+Applications that execute user input as code are susceptible to code injection. An attacker can embed code as part of their input and the application will execute it. 
+ 
+4.	CWE-434: Unrestricted Upload of File with Dangerous Type
+Certain file types can be interpreted by the server as executable files. For example, a PHP server that accepts and runs .php files is open to an attacker uploading and running arbitrary PHP code. 
+ 
+5.	CWE-494: Download of Code Without Integrity Check
+Software that uses code from outside sources (such as a third-party library) without verifying its integrity is susceptible to code injection. For instance, if the server hosting the library suddenly starts delivering a different library instead, the application has no way of knowing that this change has occurred until the library has already been integrated. 
+ 
+6.	CWE-829: Inclusion of Functionality from Untrusted Control Sphere
+Similar to CWE-494, this involves using code from outside sources. However, in this case, the code can’t be trusted to perform the actions it claims to perform. For instance, if your website uses a script from an untrusted website, your entire website is exposed to any malicious activity that the external script may perform. 
+ 
+7.	CWE-306: Missing Authentication for Critical Function
+Commands that perform privileged actions or interact with sensitive data should always require authentication. If the software ignores the authentication step, attackers can run privileged actions without having to verify their identity. 
+ 
+8.	CWE-307: Improper Restriction of Excessive Authentication Attempts
+If a user fails to authenticate multiple times in a short period, the application should prevent the user from retrying until a certain amount of time has passed. If not, an attacker can continuously try different credentials, resulting in a brute force attack. 
+ 
+9.	CWE-798: Use of Hard-coded Credentials
+Hard-coded credentials are often used during testing or when authenticating the application with another service. An attacker who finds these credentials can use them to log in to the service, access sensitive data, or impersonate the application. 
+ 
+10.	CWE-807: Reliance on Untrusted Inputs in a Security Decision
+Certain “hidden” fields (such as cookies, environment variables, and hidden form fields) can be modified to contain values other than those expected by the application. Attackers can change these fields to fool or bypass security steps such as authentication or session management. 
+ 
+11.	CWE-862: Missing Authorization
+When performing any privileged action, the application should always perform an authorization check on the user that requested the action. Failing to do so can allow unprivileged users to access secure data or perform dangerous actions. 
+ 
+12.	CWE-863: Incorrect Authorization
+Authorization checks that aren’t properly implemented can be tricked or bypass by attackers. 
+ 
+13.	CWE-311: Missing Encryption of Sensitive Data
+Sensitive data should be encrypted while in transit and while at rest. This way, anyone who accesses it won’t be able to see sensitive data without the decryption key. 
+ 
+14.	CWE-319: Cleartext Transmission of Sensitive Information
+Expanding on CWE-311, data should also be encrypted while being sent over a communication channel such as a network. Data sent over a network can be read by a third-party, meaning any unencrypted data can be read by an attacker. 
+ 
+15.	CWE-73: External Control of File Name or Path
+User input should not be used to locate files on the server. Allowing user input to determine the path can result in the user accessing sensitive files. 
+ 
+16.	CWE-285: Improper Authorization
+Similar to CWE-863, improper authorization allows users to run commands without confirming the user’s identity. This occurs when an attacker performs an action that should require an authorization check, but doesn’t. 
+ 
+17.	CWE-250: Execution with Unnecessary Privileges
+Applications should perform operations with the minimum necessary permissions. For example, writing to a file as an administrator instead of a normal user makes it possible to overwrite critical application and system files. 
+ 
+18.	CWE-676: Use of Potentially Dangerous Function
+Some functions can have negative effects when used incorrectly, allowing attackers to access system resources or cause errors. 
+ 
+19.	CWE-732: Incorrect Permission Assignment for Critical Resource
+Operations that create and manage resources (such as files) must assign the correct permissions to those resources. Failing to do so could allow unintentional access by other users. 
+ 
+20.	CWE-79: Improper Neutralization of Input During Web Page Generation (‘Cross-Site Scripting’)
+Cross-site scripting (XSS) occurs when an attacker submits input that the application then renders as output. If the input contains code (such as JavaScript), that code will be executed in the browser that the page renders in. 
+ 
+21.	CWE-134: Use of Externally-Controlled Format String
+Externally-controlled format strings can allow attackers to cause runtime errors or even write to the stack. Programs should only use static format strings. 
+ 
+22.	CWE-190: Integer Overflow or Wraparound
+An integer overflow occurs when the value of a variable is too large for its type, causing it to “wrap around” to the type’s lower limit. This can have unexpected consequences in several operations including basic arithmetic, control looping, and memory operations. 
+ 
+23.	CWE-327: Use of a Broken or Risky Cryptographic Algorithm
+Cryptographic algorithms that are known to be insecure have several possible attack vectors. Using an insecure algorithm opens your application to these attacks, whereas more secure algorithms are less likely to be vulnerable. 
+ 
+24.	CWE-759: Use of a One-way Hash Without a Salt
+A salt is a random string used to improve security when hashing data such as a password. Without a salt, hashes can be reverse engineered more easily using brute force or rainbow tables. 
+ 
+Secure Coding Guidelines and Best Practices for developing Java Code. 
+Developers are expected to follow the below best practices for secure coding during development. 
+1.	Use query parameterization to prevent injection - Always use Prepared Statements in Java to parameterize SQL statements. String concatenation should always be avoided. 
+2.	Scan your dependencies for known vulnerabilities - Ensure that applications doesn't have any known vulnerabilities. Developers needs to be vigilant while declaring dependencies in maven build, they should not include vulnerable dependency. 
+3.	Handle sensitive data with care - Sensitive data should be handled with great care. Always mask any PII data, or any unmasked PII data should not be logged. 
+4.	Sanitize all input - Consider using OWASP java end coding to sanitize input. Always consider all inputs are potentially malicious & check for inappropriate character. 
+5.	Configure your XML-parsers to prevent XXE - Make sure XML parser should not allow XX parsing from XML. The safest way to prevent XXE is always to disable DTDs completely. 
+6.	Avoid Java serialization - If you must implement the serialization interface, override the readObject method to throw an exception. If you have to deserialize, use the ValidatingObjectInputStream from Apache Commons IO to add some safety checks. 
+7.	Use strong encryption and hashing algorithms - Always use existing encryption libraries like - Google Tink, Jasypt etc rather than writing encryption logic yourself. For password encryption we should use SHA-256, SHA-3, bcrypt or scrypt etc well known hashing technique.  
+Centralize logging and monitoring - Log auditable events such as login, failed login, exceptions with useful information including their origin. Centralize logs from multiple servers with tools like Kibana, Splunk etc. 
