@@ -1,0 +1,119 @@
+Blacklist - Used to refer to a list of banned IP addresses, applications or users.
+Whitelist - The exact opposite of a blacklist
+Cat fishing - The process of creating a fake online profile in order to trick people into believing they are someone else for financial gain.
+Authentication - The process of proving an individual is who they claim to be.
+Data Mining - The activity of analyzing and/or searching through data in order to find items of relevance, significance or value
+Threat - This generally refers to anything that has the potential to cause our data, systems and networks harm.
+Exploit - A clearly defined way to breach the security of a system.
+Vulnerabilities - These are weaknesses within a system or network that can be exploited to cause us harm.
+Risk - This refers to the likelihood of something bad happening. A risk requires both a threat and a vulnerability to exist.
+Zero Day - This is used to describe a threat that is unknown to security specialists and has not been addressed.
+Hack Value - This describes a target that may attract an above average level of attention from an attacker.
+Non-Repudiation - This is the concept that once an action is carried out by a party it cannot be denied by that same party.
+Logic Bomb - A malicious code that is only triggered when a set of conditions are met.
+Obfuscation - A term used to describe the tactic of making code unclear so that humans or programs like an antivirus cannot understand it.
+Honey Pot -  A decoy or trap for hackers
+Spoof - The act of falsifying the identity of the source of a communication or interaction
+
+What are Cookies?
+You may have heard of the term cookies before but what exactly are they and how can they affect the security of your computer?
+A cookie is a text file which is placed on your computer whenever you visit a website. This cookie allows the website to keep track of your visit details and store your preferences. The main objective here is to increase the speed with which you visit that same website again. At the same time, they are very useful for advertisers who can match the ads to your interests after they see your browsing history. 
+Usually, cookies and temporary files may affect your privacy since they disclose your online habits, but it is possible to modify your web browser preferences and set a limit.
+
+Hackers who hack for political or social causes are referred to as Hactivists.
+What is typically the last step taking by a hacker in the hacking methodology?
+Installing a backdoor.
+An attack that is directed specifically against the senior executives of a company is called
+Whaling attack
+What is the server that is used to issue commands to bots in a botnet
+Command and control server
+Which of these attacks is most common with unsecured wireless networks
+Man in the middle
+Does the length of a password directly impact the chances of a brute force attack being successful?
+True
+What sort of Trojan allows a hacker to gain unauthorized access to a system?
+Backdoor Trojan
+What sort of malware is activated even before the infected system boots up?
+Rootkit
+What is the device called that can record your keystrokes or take screenshots?
+KeyLoggers
+What does it mean when an antivirus uses Heuristic methods to detect a virus?
+It predicts a file to be a virus by studying its behavior.
+In encryption, what is the term used to refer to a data that is now locked and secretive?
+Cipher
+When a firewall tracks the state of a connection between systems, this is known as
+Stateful Inspection
+What does WEP stand for?
+Wired Equivalent privacy
+Requiring the use of a username and password to gain access is an example of two factor authentication- False
+
+
+Mobile Device Management
+Mobile Device Management is the industry term that deals with deploying, securing, monitoring, integrating and managing mobile devices in the workplace.
+The primary objective is to optimize functionality and security of mobile devices. 
+There are different types of MDM software that allows the distribution of applications, data and configuration settings and patches for such devices.  Ideally the software should be able to allow IT administrators to manage and troubleshoot mobile devices remotely.
+Actionable Steps for Personal Security
+Lets talk about actionable steps that you can take today to better protect yourself against cyber attacks and malware
+Use a strong password
+One of  the easiest things you can do right now. Make sure your password is at least 8 characters in length and has a combination of letters, numbers and a special character. 
+Password Variety
+Even if you have got the strongest password in the world, it's not a good idea to just one password for all your accounts. Try to come up with 2 or even 3 variations of your main password and use those as well for some accounts. An alternative here would be to use password managers like Dashlane or LastPass.
+Deploy Multi Factor Authentication Methods
+Several websites and applications like Gmail recommend a second means of verifying who you are such as receiving a text message with a code on your phone when attempting to log in from a different computer. This extra layer of security can make a huge difference so please do it.
+Use an Antivirus
+You already know why you should. If you want a recommendation, I highly recommend using Kaspersky.
+Watch out for HTTPS
+As we discussed in the Protocols class, HTTPS is the secure version of HTTP and should be used on sites where important information like credit card details are provided. Whenever you are on such a site, make sure that you can see the secure padlock sign in the address bar that shows HTTPS
+Change your routers default password
+If you have an internet router at home, take 10 minutes now to change the default password now if you haven't.
+Use a standard account
+On a daily basis I highly recommend you use a non administrative account on your computer. This means that even if you get infected with a malware, it wouldn't be able to do much damage. In other words, no admin rights = no admin privileges to infect your PC.  
+Be cautious at all times
+Always double check anything you download to your computer. Think twice before clicking on that link you receive in your email. Be extremely wary of free applications.
+Don't store sensitive data on your PC
+If you have got important files like scanned copies of very important documents, you are better off storing them on a detachable flash drive that you can always plug into your computer and use when you have to.
+Section Review and Key Points
+Welcome to the section review.  Below are the key takeaways from this section
+•	MAC addresses are unique to network adapters but IP addresses can be changed all the time
+•	Switches are primarily used to connect devices to a network. Routers are used to connect networks together.
+•	Ethernet aka IEEE 802.3 is the protocol used to determine how data is transferred in a LAN
+•	SSL/TLS are the primary protocols used to encrypt and secure data transferred over the internet between a browser and a web server.
+•	The Internet Protocol Suite aka TCP/IP is a collection of protocols that govern the entire journey of data sent from one host or network to another.
+•	The DNS is essentially the phone book of the internet. It translates domain names into IP addresses
+•	Every DNS server has a list of all the root servers that they contact in case they can't match a domain name to an IP address
+What are Cookies?
+•	You may have heard of the term cookies before but what exactly are they and how can they affect the security of your computer?
+•	A cookie is a text file which is placed on your computer whenever you visit a website. This cookie allows the website to keep track of your visit details and store your preferences. The main objective here is to increase the speed with which you visit that same website again. At the same time, they are very useful for advertisers who can match the ads to your interests after they see your browsing history. 
+•	Usually, cookies and temporary files may affect your privacy since they disclose your online habits, but it is possible to modify your web browser preferences and set a limit.
+•	cookies can be cleared from your browser
+       
+                             SUPER COOKIES
+•	A very special type of cookie is called the super cookie and an example of such is the 'evercookie'. As the name suggests, this particular cookie is ever present in your computer despite your attempts to get rid of it. Its able to achieve this because unlike regular cookies that are stored in one location, the evercookie stores cookie data in several places – for example, in Flash cookies, your browsing history, and HTML5 local storage. 
+•	A very clever tracking method the evercookie employs is to assign a unique color value to a few pixels every time a new user visits a website. The different colors are stored in each user’s browser cache and can be loaded back. The color value of the pixels is a unique identifier that identifies the user.
+•	When a website notices that you’ve deleted part of the super cookie, the information is repopulated from the other location. For example, you might clear your browser cookies but not your Flash cookies, so the website will copy the value of the Flash cookie to your browser cookies. Super cookies are very resilient.
+•	Some of the best methods of fighting against super cookies is to avoid running Adobe Flash or Microsoft Silverlight in your browser as these two apps are used by super cookies to replicate themselves. Using VPN services like Tunnel Bear or Tor is perhaps the best way of fighting cookies.
+Welcome to the section review.  Below are the key takeaways from this section
+•	Privacy is hiding what you do online while anonymity is hiding the fact that you are online
+•	We are tracked primarily through the use of scripts and cookies by third parties
+•	Browsing incognito does not provide total privacy as downloads and bookmarks are stored and can be tracked.
+•	Set duckduckgo as your primary search engine
+•	Start using Brave browser
+•	Stylometry is the technology of being able to identify the author of an article through the analysis of previously written articles
+
+•	Anonymizer is the general term used to refer to services and products that can provide privacy and anonymity online.
+•	Proxy servers act as an intermediary between your web browser and a web server.
+•	Proxy servers can bypass ISP restrictions but provide no encryption leaving the user vulnerable to hackers
+•	VPNs primarily provide privacy and are more powerful than Proxy servers because they provide encryption
+•	 When choosing a VPN provider make sure they are not based in any of the '14 eyes' countries
+•	Tor is a very powerful tool for staying anonymous while surfing the internet
+•	Using Tor can make you a 'person of interest' and also deny you access to certain websites and web services
+•	A VPN and Tor can be combined to provide very high levels of anonymity and privacy while surfing the internet.
+•	Malware is the collective term for all kinds of malicious programs and applications
+•	Choosing an anti-virus comes down to 2 primary factors - features and pricing
+•	Rootkits are a very powerful type of malware that have the ability to run while a system is still in the booting process
+•	Ransomware are malware that can be used to deny a victim access to their data until a ransom or fee is paid
+•	Email links and attachments are one of the most effective ways of infecting a computer with ransomware 
+•	Doxing refers to the public release private information about a company or person
+
+
+
